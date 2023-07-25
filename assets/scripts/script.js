@@ -16,6 +16,22 @@ function generatePassword() {
     return;
   }
 
+  //Checks for types of characters you want to include
+  var useLowercase = confirm("Include lowercase characters?");
+  var useUppercase = confirm("Include uppercase characters?");
+  var useNumbers = confirm("Include numbers?");
+  var useSymbols = confirm("Include special characters?");
+
+  //Check if at least 1 type of character was selected
+  while (!useLowercase && !useUppercase && !useNumbers && !useSymbols) {
+    alert("Please select at least one type of character.");
+
+    var useLowercase = confirm("Include lowercase characters?");
+    var useUppercase = confirm("Include uppercase characters?");
+    var useNumbers = confirm("Include numbers?");
+    var useSymbols = confirm("Include special characters?");
+  }
+
 }
 
 // Get references to the #generate element
