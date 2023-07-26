@@ -41,6 +41,15 @@ function generatePassword() {
   if (useNumbers) passwordChars = passwordChars.concat(numberChars);
   if (useSymbols) passwordChars = passwordChars.concat(symbolChars);
 
+  //Randomize the password according with the lenght chosen by the user
+  var password = '';
+  for (var i = 0; i < length; i++) {
+    var randomPassword = Math.floor(Math.random() * passwordChars.length);
+    password = password + passwordChars[randomPassword];
+  }
+
+  //Returns the string of the random password generated
+  return password;
 }
 
 // Get references to the #generate element
