@@ -32,6 +32,15 @@ function generatePassword() {
     var useSymbols = confirm("Include special characters?");
   }
 
+  //Empty array to store the characters
+  var passwordChars = [];
+
+  //Concatonate the characters into the empty array
+  if (useLowercase) passwordChars = passwordChars.concat(lowercaseChars);
+  if (useUppercase) passwordChars = passwordChars.concat(uppercaseChars);
+  if (useNumbers) passwordChars = passwordChars.concat(numberChars);
+  if (useSymbols) passwordChars = passwordChars.concat(symbolChars);
+
 }
 
 // Get references to the #generate element
