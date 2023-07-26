@@ -12,6 +12,10 @@ N/A
 
 Click on 'Genarate Password' and select desired length and characters to include on the password. 
 
+Please visit following link to see final results.
+
+https://wesleyhas.github.io/password-generator-project/
+
 ## Preview of Page
 
 ![Screentshot 1](./assets/images/page-preview-1.png)
