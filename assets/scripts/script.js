@@ -11,9 +11,9 @@ function generatePassword() {
   var length = prompt("Enter the password length (between 8 and 32 characters):");
 
   // Validate the password length
-  if (length < 8 || length > 32) {
+  while (length < 8 || length > 32) {
     alert("Invalid password length. Please enter a number between 8 and 32.");
-    return;
+    var length = prompt("Enter the password length (between 8 and 32 characters):");
   }
 
   //Checks for types of characters you want to include
